@@ -103,22 +103,22 @@
 
     default_layer {
       bindings = <
-//    ┌────────────────┬───┬──────┬──────┬──────┬───┬───────┐                                                                                            ┌──────┬───┬────┬──────┬───┬───┬────────────────┐
-//    │       =        │ 1 │  2   │  3   │  4   │ 5 │ tog 1 │                                                                                            │ mo 3 │ 6 │ 7  │  8   │ 9 │ 0 │       -        │
-//    ├────────────────┼───┼──────┼──────┼──────┼───┼───────┤                                                                                            ├──────┼───┼────┼──────┼───┼───┼────────────────┤
-//    │      tab       │ Q │  W   │  F   │  P   │ B │       │                                                                                            │      │ J │ L  │  U   │ Y │ ' │       \        │
-//    ├────────────────┼───┼──────┼──────┼──────┼───┼───────┤                            ┌──────┬──────┐       ┌──────┬──────┐                           ├──────┼───┼────┼──────┼───┼───┼────────────────┤
-//    │      esc       │ A │  R   │  S   │  T   │ G │       │                            │ lctl │ lalt │       │ lgui │ rctl │                           │      │ M │ N  │  E   │ I │ O │       ;        │
-//    ├────────────────┼───┼──────┼──────┼──────┼───┼───────┘                            └──────┼──────┤       ├──────┼──────┘                           └──────┼───┼────┼──────┼───┼───┼────────────────┤
-//    │      lsft      │ Z │  X   │  C   │  D   │ V │                                           │ home │       │ pgup │                                         │ K │ H  │  ,   │ . │ / │      rsft      │
-//    ├────────────────┼───┼──────┼──────┼──────┼───┘       ┌────────────────────────────┬──────┼──────┤       ├──────┼──────┬───────────────────────────┐      └───┼────┼──────┼───┼───┼────────────────┤
-//    │ mo laltYER_Mod │ ` │ caps │ left │ rght │           │ &thumb laltYER_Cursor bspc │ del  │ end  │       │ pgdn │ ent  │ &thumb laltYER_Symbol spc │          │ up │ down │ [ │ ] │ mo laltYER_Mod │
-//    └────────────────┴───┴──────┴──────┴──────┘           └────────────────────────────┴──────┴──────┘       └──────┴──────┴───────────────────────────┘          └────┴──────┴───┴───┴────────────────┘
-  &kp EQUAL       &kp N1      &kp N2     &kp N3     &kp N4      &kp N5   &tog 1                                                                                                                 &mo 3   &kp N6   &kp N7   &kp N8      &kp N9     &kp N0     &kp MINUS    
-  &kp TAB         &kp Q       &kp W      &kp F      &kp P       &kp B    &none                                                                                                                  &none   &kp J    &kp L    &kp U       &kp Y      &kp SQT    &kp BSLH     
-  &kp ESC         &kp A       &kp R      &kp S      &kp T       &kp G    &none                               &kp LCTRL   &kp LALT           &kp LGUI    &kp RCTRL                               &none   &kp M    &kp N    &kp E       &kp I      &kp O      &kp SEMI     
-  &kp LSHFT       &kp Z       &kp X      &kp C      &kp D       &kp V                                                    &thumb LAYER_Function HOME           &kp PG_UP                                                   &kp K    &kp H    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT    
-  &mo LAYER_Mod   &kp GRAVE   &kp CAPS   &kp LEFT   &sk RGUI                     &thumb LAYER_Cursor BSPC   &thumb LAYER_Number DEL     &kp END            &kp PG_DN   &kp ENTER   &thumb LAYER_Symbol SPACE                    &kp LPAR   &kp LBKT    &kp RBKT   &kp RPAR   &mo LAYER_Mod
+//    ┌────────────────┬───┬──────┬──────┬──────────┬───┬──────────┐                                                                                                                                         ┌──────────┬───┬───┬───┬───┬───┬────────────────┐
+//    │       =        │ 1 │  2   │  3   │    4     │ 5 │  tog 1   │                                                                                                                                         │   mo 3   │ 6 │ 7 │ 8 │ 9 │ 0 │       -        │
+//    ├────────────────┼───┼──────┼──────┼──────────┼───┼──────────┤                                                                                                                                         ├──────────┼───┼───┼───┼───┼───┼────────────────┤
+//    │      tab       │ Q │  W   │  F   │    P     │ B │          │                                                                                                                                         │          │ J │ L │ U │ Y │ ' │       \        │
+//    ├────────────────┼───┼──────┼──────┼──────────┼───┼──────────┤                            ┌───────────────────────────┬──────────────────────────────┐       ┌──────┬──────┐                           ├──────────┼───┼───┼───┼───┼───┼────────────────┤
+//    │      esc       │ A │  R   │  S   │    T     │ G │ &sk rgui │                            │           lctl            │             lalt             │       │ lgui │ rctl │                           │ &sk rgui │ M │ N │ E │ I │ O │       ;        │
+//    ├────────────────┼───┼──────┼──────┼──────────┼───┼──────────┘                            └───────────────────────────┼──────────────────────────────┤       ├──────┼──────┘                           └──────────┼───┼───┼───┼───┼───┼────────────────┤
+//    │      lsft      │ Z │  X   │  C   │    D     │ V │                                                                   │ &thumb laltYER_Function home │       │ pgup │                                             │ K │ H │ , │ . │ / │      rsft      │
+//    ├────────────────┼───┼──────┼──────┼──────────┼───┘          ┌────────────────────────────┬───────────────────────────┼──────────────────────────────┤       ├──────┼──────┬───────────────────────────┐          └───┼───┼───┼───┼───┼────────────────┤
+//    │ mo laltYER_Mod │ ` │ caps │ left │ &sk rgui │              │ &thumb laltYER_Cursor bspc │ &thumb laltYER_Number del │             end              │       │ pgdn │ ent  │ &thumb laltYER_Symbol spc │              │ ( │ [ │ ] │ ) │ mo laltYER_Mod │
+//    └────────────────┴───┴──────┴──────┴──────────┘              └────────────────────────────┴───────────────────────────┴──────────────────────────────┘       └──────┴──────┴───────────────────────────┘              └───┴───┴───┴───┴────────────────┘
+  &kp EQUAL       &kp N1      &kp N2     &kp N3     &kp N4     &kp N5   &tog 1                                                                                                                                                   &mo 3      &kp N6   &kp N7     &kp N8      &kp N9     &kp N0     &kp MINUS    
+  &kp TAB         &kp Q       &kp W      &kp F      &kp P      &kp B    &none                                                                                                                                                    &none      &kp J    &kp L      &kp U       &kp Y      &kp SQT    &kp BSLH     
+  &kp ESC         &kp A       &kp R      &kp S      &kp T      &kp G    &sk RGUI                              &kp LCTRL                 &kp LALT                             &kp LGUI    &kp RCTRL                               &sk RGUI   &kp M    &kp N      &kp E       &kp I      &kp O      &kp SEMI     
+  &kp LSHFT       &kp Z       &kp X      &kp C      &kp D      &kp V                                                                    &thumb LAYER_Function HOME           &kp PG_UP                                                      &kp K    &kp H      &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT    
+  &mo LAYER_Mod   &kp GRAVE   &kp CAPS   &kp LEFT   &sk RGUI                       &thumb LAYER_Cursor BSPC   &thumb LAYER_Number TAB   &kp END                              &kp PG_DN   &kp ENTER   &thumb LAYER_Symbol SPACE                       &kp LPAR   &kp LBKT    &kp RBKT   &kp RPAR   &mo LAYER_Mod
       >;
     };
 
@@ -181,7 +181,7 @@
   &none   &none           &kp REDO       &kp UNDO         &kp BSPC        &kp A   &none                                                           &none   &kp PRCNT   &kp N7     &kp N8     &kp N9   &kp COLON   &kp K   
   &none   &kp PINKY_MOD   &kp RING_MOD   &kp MIDDLE_MOD   &kp INDEX_MOD   &kp B   &none           &none   &none           &none   &none           &none   &kp PLUS    &kp N4     &kp N5     &kp N6   &kp MINUS   &kp J   
   &none   &kp OSC(A)      &none          &none            &kp UNDER       &kp C                           &none           &none                           &kp STAR    &kp N1     &kp N2     &kp N3   &kp SLASH   &none   
-  &none   &none           &none          &none            &kp X                           &none   &none   &none           &none   &none   &none                       &none      &none      &none    &none       &none   
+  &none   &none           &none          &none            &kp X                           &none   &none   &none           &none   &none   &none                       &kp N0      &kp DOT      &kp COMMA    &none       &none   
       >;
     };
 
@@ -224,7 +224,7 @@
   &none      &none           &none          &none            &none           &none   &none                                                                            &none   &none   &kp F7   &kp F8   &kp F9   &kp F10   &kp F13
   &kp CAPS   &kp PINKY_MOD   &kp RING_MOD   &kp MIDDLE_MOD   &kp INDEX_MOD   &none   &none           &none   &none           &kp C_PREV     &kp C_NEXT                &none   &none   &kp F4   &kp F5   &kp F6   &kp F11   &kp F14
   &none      &kp OSC(A)      &none          &none            &none           &none                           &none           &kp C_VOL_UP                                     &none   &kp F1   &kp F2   &kp F3   &kp F12   &kp F15
-  &none      &none           &none          &none            &none                           &none   &none   &none           &kp C_VOL_DN   &kp C_PP     &kp C_MUTE                   &none    &none    &none    &none     &none  
+  &none      &none           &none          &none            &none                           &none   &none   &none           &kp C_VOL_DN   &kp C_PP     &kp C_MUTE                   &kp C_BRI_MAX    &kp C_BRI_UP    &kp C_BRI_DN    &kp C_BRI_MIN     &kp C_BRI_AUTO 
       >;
     };
 
