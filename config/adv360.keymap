@@ -167,22 +167,22 @@
 
     number {
       bindings = <
-//    ┌─────┬───────────┬──────────┬────────────┬───────────┬─────┬─────┐                                           ┌─────┬───┬───┬───┬───┬─────┬─────┐
-//    │     │           │          │            │           │     │     │                                           │     │ ^ │ $ │ # │ @ │  !  │  |  │
-//    ├─────┼───────────┼──────────┼────────────┼───────────┼─────┼─────┤                                           ├─────┼───┼───┼───┼───┼─────┼─────┤
-//    │     │           │   REDO   │    UNDO    │   bspc    │  A  │     │                                           │     │ % │ 7 │ 8 │ 9 │  :  │  K  │
-//    ├─────┼───────────┼──────────┼────────────┼───────────┼─────┼─────┤     ┌─────┬─────┐       ┌─────┬─────┐     ├─────┼───┼───┼───┼───┼─────┼─────┤
-//    │     │ PINKY_MOD │ RING_MOD │ MIDDLE_MOD │ INDEX_MOD │  B  │     │     │     │     │       │     │     │     │     │ + │ 4 │ 5 │ 6 │  -  │  J  │
-//    ├─────┼───────────┼──────────┼────────────┼───────────┼─────┼─────┘     └─────┼─────┤       ├─────┼─────┘     └─────┼───┼───┼───┼───┼─────┼─────┤
-//    │     │  OSC(A)   │          │            │     _     │  C  │                 │     │       │     │                 │ * │ 1 │ 2 │ 3 │  /  │     │
-//    ├─────┼───────────┼──────────┼────────────┼───────────┼─────┘     ┌─────┬─────┼─────┤       ├─────┼─────┬─────┐     └───┼───┼───┼───┼─────┼─────┤
-//    │     │           │          │            │     X     │           │     │     │     │       │     │     │     │         │ 0 │ . │ , │     │     │
-//    └─────┴───────────┴──────────┴────────────┴───────────┘           └─────┴─────┴─────┘       └─────┴─────┴─────┘         └───┴───┴───┴─────┴─────┘
-  &none   &none           &none          &none            &none           &none   &none                                                           &none   &kp CARET   &kp DLLR   &kp HASH   &kp AT      &kp EXCL    &kp PIPE
-  &none   &none           &kp REDO       &kp UNDO         &kp BSPC        &kp A   &none                                                           &none   &kp PRCNT   &kp N7     &kp N8     &kp N9      &kp COLON   &kp K   
-  &none   &kp PINKY_MOD   &kp RING_MOD   &kp MIDDLE_MOD   &kp INDEX_MOD   &kp B   &none           &none   &none           &none   &none           &none   &kp PLUS    &kp N4     &kp N5     &kp N6      &kp MINUS   &kp J   
-  &none   &kp OSC(A)      &none          &none            &kp UNDER       &kp C                           &none           &none                           &kp STAR    &kp N1     &kp N2     &kp N3      &kp SLASH   &none   
-  &none   &none           &none          &none            &kp X                           &none   &none   &none           &none   &none   &none                       &kp N0     &kp DOT    &kp COMMA   &none       &none   
+//    ┌─────┬───────────┬─────────────┬────────────┬───────────┬─────┬─────┐                                           ┌─────┬───┬───┬───┬───┬─────┬─────┐
+//    │     │           │             │            │           │     │     │                                           │     │ ^ │ $ │ # │ @ │  !  │  |  │
+//    ├─────┼───────────┼─────────────┼────────────┼───────────┼─────┼─────┤                                           ├─────┼───┼───┼───┼───┼─────┼─────┤
+//    │     │           │    REDO     │    UNDO    │   bspc    │  A  │     │                                           │     │ % │ 7 │ 8 │ 9 │  :  │  K  │
+//    ├─────┼───────────┼─────────────┼────────────┼───────────┼─────┼─────┤     ┌─────┬─────┐       ┌─────┬─────┐     ├─────┼───┼───┼───┼───┼─────┼─────┤
+//    │     │ PINKY_MOD │  RING_MOD   │ MIDDLE_MOD │ INDEX_MOD │  B  │     │     │     │     │       │     │     │     │     │ + │ 4 │ 5 │ 6 │  -  │  J  │
+//    ├─────┼───────────┼─────────────┼────────────┼───────────┼─────┼─────┘     └─────┼─────┤       ├─────┼─────┘     └─────┼───┼───┼───┼───┼─────┼─────┤
+//    │     │  OSC(A)   │ TMUX_PREFIX │            │     _     │  C  │                 │     │       │     │                 │ * │ 1 │ 2 │ 3 │  /  │     │
+//    ├─────┼───────────┼─────────────┼────────────┼───────────┼─────┘     ┌─────┬─────┼─────┤       ├─────┼─────┬─────┐     └───┼───┼───┼───┼─────┼─────┤
+//    │     │           │             │            │     X     │           │     │     │     │       │     │     │     │         │ 0 │ . │ , │     │     │
+//    └─────┴───────────┴─────────────┴────────────┴───────────┘           └─────┴─────┴─────┘       └─────┴─────┴─────┘         └───┴───┴───┴─────┴─────┘
+  &none   &none           &none             &none            &none           &none   &none                                                           &none   &kp CARET   &kp DLLR   &kp HASH   &kp AT      &kp EXCL    &kp PIPE
+  &none   &none           &kp REDO          &kp UNDO         &kp BSPC        &kp A   &none                                                           &none   &kp PRCNT   &kp N7     &kp N8     &kp N9      &kp COLON   &kp K   
+  &none   &kp PINKY_MOD   &kp RING_MOD      &kp MIDDLE_MOD   &kp INDEX_MOD   &kp B   &none           &none   &none           &none   &none           &none   &kp PLUS    &kp N4     &kp N5     &kp N6      &kp MINUS   &kp J   
+  &none   &kp OSC(A)      &kp TMUX_PREFIX   &none            &kp UNDER       &kp C                           &none           &none                           &kp STAR    &kp N1     &kp N2     &kp N3      &kp SLASH   &none   
+  &none   &none           &none             &none            &kp X                           &none   &none   &none           &none   &none   &none                       &kp N0     &kp DOT    &kp COMMA   &none       &none   
       >;
     };
 
