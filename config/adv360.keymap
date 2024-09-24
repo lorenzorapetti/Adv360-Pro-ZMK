@@ -119,7 +119,7 @@
   &kp TAB         &kp Q       &kp W        &kp F      &kp P      &kp B    &none                                                                                                                                                    &none      &kp J    &kp L      &kp U       &kp Y      &kp SQT    &kp BSLH     
   &kp ESC         &kp A       &kp R        &kp S      &kp T      &kp G    &sk RGUI                              &kp LCTRL                 &kp LGUI                             &kp LGUI    &kp RCTRL                               &sk RGUI   &kp M    &kp N      &kp E       &kp I      &kp O      &kp SEMI     
   &kp LSHFT       &kp Z       &kp X        &kp C      &kp D      &kp V                                                                    &kp LALT                             &kp LALT                                                       &kp K    &kp H      &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT    
-  &mo LAYER_Mod   &kp GRAVE   &caps_word   &kp LEFT   &sk RGUI                       &thumb LAYER_Cursor BSPC   &thumb LAYER_Number TAB   &thumb LAYER_Function HOME           &kp PG_DN   &kp ENTER   &thumb LAYER_Symbol SPACE                       &kp LPAR   &kp LBKT    &kp RBKT   &kp RPAR   &mo LAYER_Mod
+  &mo LAYER_Mod   &kp GRAVE   &caps_word   &kp UNDER   &sk MINUS                       &thumb LAYER_Cursor BSPC   &thumb LAYER_Number TAB   &thumb LAYER_Function HOME           &kp PG_DN   &kp ENTER   &thumb LAYER_Symbol SPACE                       &kp LPAR   &kp LBKT    &kp RBKT   &kp RPAR   &mo LAYER_Mod
       >;
     };
 
@@ -140,7 +140,7 @@
   &kp TAB         &kp Q       &kp W      &kp E      &kp R       &kp T    &none                                                                                                                  &none   &kp Y    &kp U    &kp I       &kp O      &kp P      &kp BSLH     
   &kp ESC         &kp A       &kp S      &kp D      &kp F       &kp G    &none                               &kp LCTRL   &kp LALT           &kp LGUI    &kp RCTRL                               &none   &kp H    &kp J    &kp K       &kp L      &kp SEMI   &kp SQT      
   &kp LSHFT       &kp Z       &kp X      &kp C      &kp V       &kp B                                                    &kp HOME           &kp PG_UP                                                   &kp N    &kp M    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT    
-  &mo LAYER_Mod   &kp GRAVE   &kp CAPS   &kp LEFT   &kp RIGHT                     &thumb LAYER_Cursor BSPC   &kp DEL     &kp END            &kp PG_DN   &kp ENTER   &thumb LAYER_Symbol SPACE                    &kp UP   &kp DOWN    &kp LBKT   &kp RBKT   &mo LAYER_Mod
+  &mo LAYER_Mod   &kp GRAVE   &kp CAPS   &kp UNDER   &kp MINUS                     &thumb LAYER_Cursor BSPC   &kp DEL     &kp END            &kp PG_DN   &kp ENTER   &thumb LAYER_Symbol SPACE                    &kp UP   &kp DOWN    &kp LBKT   &kp RBKT   &mo LAYER_Mod
       >;
     };
 
@@ -181,7 +181,7 @@
   &none   &none           &none             &none            &none           &none   &none                                                           &none   &kp CARET   &kp DLLR   &kp HASH   &kp AT      &kp EXCL    &kp PIPE
   &none   &none           &kp REDO          &kp UNDO         &kp BSPC        &kp A   &none                                                           &none   &kp PRCNT   &kp N7     &kp N8     &kp N9      &kp COLON   &kp K   
   &none   &kp PINKY_MOD   &kp RING_MOD      &kp MIDDLE_MOD   &kp INDEX_MOD   &kp B   &none           &none   &none           &none   &none           &none   &kp PLUS    &kp N4     &kp N5     &kp N6      &kp MINUS   &kp J   
-  &none   &kp OSC(A)      &kp TMUX_PREFIX   &none            &kp UNDER       &kp C                           &none           &none                           &kp STAR    &kp N1     &kp N2     &kp N3      &kp SLASH   &none   
+  &none   &kp OSC(A)      &kp TMUX_PREFIX   &none            &kp UNDER       &kp C                           &none           &none                           &kp STAR    &kp N1     &kp N2     &kp N3      &kp SLASH   &kp LS(G)
   &none   &none           &none             &none            &kp X                           &none   &none   &none           &none   &none   &none                       &kp N0     &kp DOT    &kp COMMA   &none       &none   
       >;
     };
@@ -200,10 +200,10 @@
 //    ├───────┼───────────┼─────────────┼────────────┼───────────┼───────┘     ┌─────┬─────┼─────┤       ├─────┼─────┬─────┐     └───────┼──────┼──────┼──────┼────────────────┼─────┤
 //    │       │           │             │            │           │             │     │     │     │       │     │     │     │             │      │      │      │                │     │
 //    └───────┴───────────┴─────────────┴────────────┴───────────┘             └─────┴─────┴─────┘       └─────┴─────┴─────┘             └──────┴──────┴──────┴────────────────┴─────┘
-  &none        &none           &none             &none            &none           &none       &none                                                           &none   &none       &none      &none       &none       &none                &none
+  &none        &none           &none             &none            &kp LG(LS(C))           &none       &none                                                           &none   &none       &none      &none       &none       &none                &none
   &none        &none           &kp REDO          &kp UNDO         &kp BSPC        &kp CUT     &none                                                           &none   &kp CUT     &kp BSPC   &kp ENTER   &kp SPACE   &none                &none
   &caps_word   &kp PINKY_MOD   &kp RING_MOD      &kp MIDDLE_MOD   &kp INDEX_MOD   &kp COPY    &none           &none   &none           &none   &none           &none   &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp VIM_WIN_PREFIX   &none
-  &none        &kp OSC(A)      &kp RESIZE_MODE   &none            &kp FIND        &kp PASTE                           &none           &none                           &kp PASTE   &kp HOME   &kp PG_UP   &kp PG_DN   &kp END              &none
+  &none        &kp OSC(A)      &kp RESIZE_MODE   &kp FIND         &kp LG(LS(V))        &kp PASTE                           &none           &none                           &kp PASTE   &kp HOME   &kp PG_UP   &kp PG_DN   &kp END              &none
   &none        &none           &none             &none            &none                               &none   &none   &none           &none   &none   &none                       &none      &none       &none       &none                &none
       >;
     };
